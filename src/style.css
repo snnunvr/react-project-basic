@@ -1,0 +1,88 @@
+/* style.css */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+  .hero {
+    width: 100%;
+    min-height: 100vh;
+    background: url("/public/background.jpg") center/cover;
+    color: black;
+    font-weight: bold;
+    display: flex;
+  }
+  
+  .hero .container {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: #cd6228;
+  }
+  
+  .hero .container .randomNum {
+    background: #faf0d7;
+    padding: 20px;
+    min-width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .hero .container .randomNum p span {
+    color: red;
+    font-weight: bold;
+    justify-content: flex-end;
+  }
+  
+  .hero .numContainer {
+    display: flex;        /* Kutuların yan yana sıralanmasını sağlar */
+  }
+  
+  .hero .numContainer div {
+    flex: 1;              /* Her kutuya eşit miktarda alan verir */
+    margin-right: 10px;   /* Kutular arasında bir boşluk bırakır */
+    
+  }
+  
+  .hero .numContainer div:last-child {
+    margin-right: 0;      /* Son kutu için sağda boşluk bırakmaz */
+
+  }
+  
+  .hero .numContainer div input {
+    padding: 8px;
+    border: none;
+    outline: none;
+    width: 100%;
+    background: #faf0d7;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    
+  }
+  
+  .hero .container button {
+    align-items: flex-end;
+    border: none;
+    outline: none;
+    background: #faf0d7;
+    color: black;
+    font-weight: bold;
+    padding: 14px;
+    width: 100%;
+    font-size: 22px;
+    cursor: pointer;
+    transition: .4s;
+    margin-top: 20px;
+  }
+  
+  .hero .container button:hover {
+    background-color: black;
+    color: #faf0d7;
+  }
+  
